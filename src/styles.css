@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #8d8686;
+}
+
+.app--section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.app--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5rem;
+  font-style: oblique;
+  text-decoration: underline;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  background: #f7ff00;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#dc38a5), to(#f7ff00));
+  background: linear-gradient(to right, #dc38a5, #f7ff00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.review--section {
+  padding: 2rem 5rem;
+  margin-top: 7rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0.2rem 0.2rem 2rem 0.1rem black;
+          box-shadow: 0.2rem 0.2rem 2rem 0.1rem black;
+  border-radius: 2rem;
+  min-width: 25rem;
+  max-width: 40rem;
+  min-height: 30rem;
+  max-height: 50rem;
+}
+
+.review--img {
+  padding: 2rem;
+}
+
+.review--img--person {
+  position: relative;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+}
+
+.review--img--person::after {
+  content: '';
+  width: 120%;
+  height: 120%;
+  background: red;
+  position: absolute;
+  top: 50rem;
+  right: 0rem;
+  border-radius: 50%;
+}
+
+.review--name {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  word-break: keep-all;
+}
+
+.review--job {
+  font-size: 2.5rem;
+  color: gray;
+  margin-bottom: 1rem;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.review--description {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 30rem;
+  height: 10rem;
+}
+
+.review--button--container {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.random--button {
+  padding: 1rem 2rem;
+  background-color: rgba(0, 255, 255, 0.123);
+  border: none;
+  border-radius: 1rem;
+  color: #0084ff;
+  font-weight: 600;
+  width: 15rem;
+  margin: 0 8rem;
+  cursor: pointer;
+}
+
+.prev--button {
+  font-size: 3rem;
+  color: #10a2b6;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.next--button {
+  font-size: 3rem;
+  color: #10a2b6;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
